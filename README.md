@@ -39,7 +39,7 @@ To build and run this app locally you will need a few things:
 # Getting started
 - Clone the repository
 ```
-git clone --depth=1 https://github.com/Microsoft/TypeScript-Node-Starter.git <project_name>
+git clone --depth=1 https://github.com/rampage0131/TypeScript-Node-Starter.git <project_name>
 ```
 - Install dependencies
 ```
@@ -179,7 +179,7 @@ If you haven't created a cloud database yet, see [the setup instructions](#Creat
 13. Profit!
 
 ### Troubleshooting failed deployments
-Deployment can fail for various reasons, if you get stuck with a page that says *Service Unavailable* or some other error, [open an issue](https://github.com/Microsoft/TypeScript-Node-Starter/issues/new) and I'll try to help you resolve the problems.
+Deployment can fail for various reasons, if you get stuck with a page that says *Service Unavailable* or some other error, [open an issue](https://github.com/rampage0131/TypeScript-Node-Starter/issues/new) and I'll try to help you resolve the problems.
 
 # TypeScript + Node
 In the next few sections I will call out everything that changes when adding TypeScript to an Express project.
@@ -314,7 +314,7 @@ Below is a list of all the scripts this template has available:
 ## Type Definition (`.d.ts`) Files
 TypeScript uses `.d.ts` files to provide types for JavaScript libraries that were not written in TypeScript.
 This is great because once you have a `.d.ts` file, TypeScript can type check that library and provide you better help in your editor.
-The TypeScript community actively shares all the most up-to-date `.d.ts` files for popular libraries on a GitHub repository called [DefinitelyTyped](https://github.com/DefinitelyTyped/DefinitelyTyped/tree/master/types).
+The TypeScript community actively shares all the most up-to-date `.d.ts` files for popular libraries on a GitHub repository called [DefinitelyTyped]
 Making sure that your `.d.ts` files are setup correctly is super important because once they're in place, you get an incredible amount of high quality type checking (and thus bug catching, IntelliSense, and other editor tools) for free.
 
 > **Note!** Because we're using `"noImplicitAny": true`, we are required to have a `.d.ts` file for **every** library we use. While you could set `noImplicitAny` to `false` to silence errors about missing `.d.ts` files, it is a best practice to have a `.d.ts` file for every library. (Even if the `.d.ts` file is [basically empty!](#writing-a-dts-file))
@@ -355,8 +355,8 @@ import * as flash from "express-flash";
 First the compiler will look for a `d.ts` file in `node_modules/@types` and then when it doesn't find one look in `src/types` and find our file `express-flash.d.ts`.
 
 #### Using `dts-gen`
-Unless you are familiar with `.d.ts` files, I strongly recommend trying to use the tool [dts-gen](https://github.com/Microsoft/dts-gen) first.
-The [README](https://github.com/Microsoft/dts-gen#dts-gen-a-typescript-definition-file-generator) does a great job explaining how to use the tool, and for most cases, you'll get an excellent scaffold of a `.d.ts` file to start with.
+Unless you are familiar with `.d.ts` files, I strongly recommend trying to use the tool [dts-gen](https://github.com/rampage0131/dts-gen) first.
+The [README](https://github.com/rampage0131/dts-gen#dts-gen-a-typescript-definition-file-generator) does a great job explaining how to use the tool, and for most cases, you'll get an excellent scaffold of a `.d.ts` file to start with.
 In this project, `bcrypt-nodejs.d.ts`, `fbgraph.d.ts`, and `lusca.d.ts` were all generated using `dts-gen`.
 
 #### Writing a `.d.ts` file
@@ -372,7 +372,6 @@ If you want to invest some time into making a great `.d.ts` file that will give 
 The reason it's so easy to get great `.d.ts` files for most libraries is that developers like you contribute their work back to DefinitelyTyped.
 Contributing `.d.ts` files is a great way to get into the open source community if it's something you've never tried before, and as soon as your changes are accepted, every other developer in the world has access to your work.
 
-If you're interested in giving it a shot, check out the [guidance on DefinitelyTyped](https://github.com/definitelyTyped/DefinitelyTyped/#how-can-i-contribute).
 If you're not interested, [you should tell me why](https://www.surveymonkey.com/r/LN2CV82) so we can help make it easier in the future!
 
 ### Summary of `.d.ts` management
@@ -611,8 +610,6 @@ In that file you'll find two sections:
 
 To install or update these dependencies you can use `npm install` or `npm update`.
 
-# Hackathon Starter Project
-A majority of this quick start's content was inspired or adapted from Sahat's excellent [Hackathon Starter project](https://github.com/sahat/hackathon-starter).
 
 ## License
 Copyright (c) Microsoft Corporation. All rights reserved.
